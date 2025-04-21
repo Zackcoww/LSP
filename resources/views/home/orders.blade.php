@@ -74,7 +74,7 @@
                         <!-- <button type="button" class="btn btn-secondary" disabled></button> -->
                       @else
                         <button type="button" class="btn btn-secondary" disabled>
-                          SELESAI
+                          SELESAI 
                         </button>
                       @endif
                     </form>

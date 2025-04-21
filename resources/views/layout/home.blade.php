@@ -122,7 +122,7 @@
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
                 <li class="address">{{ $about->alamat }}</li>
-                <li class="phone"><a href="tel://23923929210">{{ $about->telepon }}</a></li>
+                <li class="phone"><a hr ef="tel://23923929210">{{ $about->telepon }}</a></li>
                 <li class="email">{{ $about->email }}</li>
               </ul>
             </div>

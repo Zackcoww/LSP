@@ -25,7 +25,7 @@
                 <a href="https://www.creative-tim.com" class="simple-text logo-mini">
                 </a>
                 <a href="https://www.creative-tim.com" class="simple-text logo-normal">
-                Your Logo
+                Zako Shop
                 </a>
             </div>
             <div class="sidebar-wrapper">
@@ -39,19 +39,19 @@
                     @if (Auth::guard('web')->user()->role == 'admin')
                     <li class="{{ (Request::is('barang') ? 'active' : '') ? 'active' : '' }}">
                         <a href="/barang">
-                        <i class="nc-icon nc-single-02"></i>
+                        <i class="nc-icon nc-app"></i>
                         <p>Products</p>
                         </a>
                     </li>
                     <li class="{{ (Request::is('discounts') ? 'active' : '') ? 'active' : '' }}">
                         <a href="/discounts">
-                        <i class="nc-icon nc-single-02"></i>
+                        <i class="nc-icon nc-chart-pie-36"></i>
                         <p>Discounts</p>
                         </a>
                     </li>
                     <li class="{{ (Request::is('payment') ? 'active' : '') ? 'active' : '' }}">
                         <a href="/payment">
-                        <i class="nc-icon nc-bell-55"></i>
+                        <i class="nc-icon nc-check-2"></i>
                         <p>Payment</p>
                         </a>
                     </li>
