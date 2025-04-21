@@ -60,25 +60,18 @@
                   <td>Rp. {{ number_format($order->grand_total) }}</td>
                   <td>{{ $order->status }}</td>
                   <td>
-                    <form action="/pesanan_selesai/{{ $order->id }}" method="POST">
-                      @csrf
-                      @php
-                        $status = strtolower($order->status);
-                      @endphp
+                  @php
+                    $status = strtolower($order->status);
+                  @endphp
 
-                      @if ($status === 'finished')
-                        <button type="submit" class="btn btn-success">
-                          SELESAI
-                        </button>
-                      @elseif ($status === 'selesai')
-                        <!-- <button type="button" class="btn btn-secondary" disabled></button> -->
-                      @else
-                        <button type="button" class="btn btn-secondary" disabled>
-                          SELESAI 
-                        </button>
-                      @endif
+                  @if ($status === 'sent')
+                    <form action="/ubah_status/{{ $order->id }}" method="POST">
+                      @csrf
+                      <input type="hidden" name="status" value="received">
+                      <button type="submit" class="btn btn-success">RECEIVED</button>
                     </form>
-                  </td>
+                  @endif
+                </td>
                 </tr>
               @endforeach
             </tbody>

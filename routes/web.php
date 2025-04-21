@@ -68,3 +68,4 @@ Route::get('/get_ongkir/{destination}/{weight}', [HomeController::class, 'get_on
 Route::post('/checkout_orders', [HomeController::class, 'checkout_orders']);
 Route::post('/payments', [HomeController::class, 'payments']);
 Route::post('/pesanan_selesai/{order}', [HomeController::class, 'pesanan_selesai']);
+Route::post('/ubah_status/{order}', [OrderController::class, 'ubah_status']);

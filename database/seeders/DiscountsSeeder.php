@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Discount;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use Carbon\Carbon;
 
 class DiscountsSeeder extends Seeder
@@ -13,7 +14,7 @@ class DiscountsSeeder extends Seeder
     {
         DB::table('discounts')->insert([
             [
-                'id_barang' => 0,
+                'id_barang' => 1,
                 'start_date' => Carbon::now(),
                 'end_date' => Carbon::now()->addDays(10),
                 'percentage' => 50,

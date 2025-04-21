@@ -23,20 +23,20 @@
               <input type="hidden" name="id_order" value="{{ $orders->id }}">
               <div class="form-group row">
                 <div class="col-md-12">
-                  <label for="atas_nama" class="text-black">Name <span class="text-danger">*</span></label>
+                  <label for="atas_nama" class="text-black">Atas Nama <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" id="atas_nama" name="atas_nama" placeholder="Name">
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="address_detail" class="text-black">Address <span class="text-danger">*</span></label>
+                <label for="address_detail" class="text-black">Alamat <span class="text-danger">*</span></label>
                 <textarea name="address_detail" id="address_detail" cols="30" rows="5" class="form-control"
                   placeholder="Address Detail...">{{ Auth::guard('webcustomer')->user()->address }}</textarea>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <label for="no_rekening" class="text-black">Bank Account Number <span class="text-danger">*</span></label>
+                  <label for="no_rekening" class="text-black">Nomor Kartu Kredit <span class="text-danger">*</span></label>
                   <input type="text" class="form-control" id="no_rekening" name="no_rekening" placeholder="Bank Account">
                 </div>
               </div>

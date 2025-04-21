@@ -135,6 +135,11 @@ sleep 20
 echo "[+] Running Laravel commands..."
 sudo docker exec -it laravel_app composer install
 sudo docker exec -it laravel_app php artisan key:generate
+
+#sudo docker exec -it laravel_app composer require tymon/jwt-auth
+#sudo docker exec -it laravel_app php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+sudo docker exec -it laravel_app php artisan jwt:secret
 sudo docker exec -it laravel_app php artisan migrate:fresh
 sudo docker exec -it laravel_app php artisan db:seed
 sudo docker exec -it chown -R www-data:www-data www/
