@@ -30,6 +30,9 @@
                             Account Number
                             </th>
                             <th>
+                            Address
+                            </th>
+                            <th>
                             Name
                             </th>
                             <th>
@@ -69,6 +72,10 @@
                             <label for="jumlah">Jumlah</label>
                             <input type="text" class="form-control" name="jumlah" placeholder="Jumlah" readonly>
                         </div>
+                        <!-- <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <input type="text" class="form-control" name="alamat" placeholder="alamat" readonly>
+                        </div> -->
                         <div class="form-group">
                             <label for="no_rekening">No Rekening</label>
                             <input type="text" class="form-control" name="no_rekening" placeholder="No Rekening" readonly>
@@ -125,6 +132,7 @@
                             <td>${val.id_order}</td>
                             <td>${rupiah(val.jumlah)}</td>
                             <td>${val.no_rekening}</td>
+                            <td>${val.address_detail}</td>
                             <td>${val.atas_nama}</td>
                             <td>${val.status}</td>
                             <td>

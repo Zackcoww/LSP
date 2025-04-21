@@ -53,20 +53,34 @@
               </tr>
             </thead>
             <tbody>
-            @foreach ($orders as $index => $order)
-              <tr>
-                <td>{{ $index+1 }}</td>
-                <td>{{ $order->created_at }}</td>
-                <td>Rp. {{ number_format($order->grand_total) }}</td>
-                <td>{{ $order->status }}</td>
-                <td>
-                  <form action="/pesanan_selesai/{{ $order->id }}" method="POST">
-                    @csrf
-                    <button type="submit" class="btn btn-success">SELESAI</button>
-                  </form>
-                </td>
-              </tr>
-            @endforeach
+              @foreach ($orders as $index => $order)
+                <tr>
+                  <td>{{ $index + 1 }}</td>
+                  <td>{{ $order->created_at }}</td>
+                  <td>Rp. {{ number_format($order->grand_total) }}</td>
+                  <td>{{ $order->status }}</td>
+                  <td>
+                    <form action="/pesanan_selesai/{{ $order->id }}" method="POST">
+                      @csrf
+                      @php
+                        $status = strtolower($order->status);
+                      @endphp
+
+                      @if ($status === 'finished')
+                        <button type="submit" class="btn btn-success">
+                          SELESAI
+                        </button>
+                      @elseif ($status === 'selesai')
+                        <!-- <button type="button" class="btn btn-secondary" disabled></button> -->
+                      @else
+                        <button type="button" class="btn btn-secondary" disabled>
+                          SELESAI
+                        </button>
+                      @endif
+                    </form>
+                  </td>
+                </tr>
+              @endforeach
             </tbody>
           </table>
         </div>

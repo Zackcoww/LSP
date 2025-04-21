@@ -11,7 +11,7 @@ class ReportController extends Controller
 {
     public function __construct(){
         $this->middleware('auth')->only(['index']);
-        $this->middleware('auth:api')->only(['get_reports']);
+        #$this->middleware('auth:api')->only(['get_reports']);
     }
 
     public function get_reports(Request $request){

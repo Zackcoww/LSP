@@ -6,8 +6,8 @@
     <div class="row">
       <div class="col-lg-7 mx-auto order-lg-2 align-self-center">
         <div class="site-block-cover-content text-center">
-          <h2 class="sub-title">Effective Medicine, New Medicine Everyday</h2>
-          <h1>Welcome To Pharma</h1>
+          <h2 class="sub-title">Freshly Harvested, Naturally Delicious</h2>
+          <h1>Welcome To Zako Shop</h1>
           <p>
             <a href="#" class="btn btn-primary px-5 py-3">Shop Now</a>
           </p>
@@ -23,10 +23,10 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
         <div class="banner-wrap bg-primary h-100">
           <a href="#" class="h-100">
-            <h5>Free <br> Shipping</h5>
+            <h5>Free <br> Delivery</h5>
             <p>
-              Amet sit amet dolor
-              <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+            Straight from our fields in Cianjur
+              <strong>Enjoy the goodness of fresh fruits and vegetables at your doorstep.</strong>
             </p>
           </a>
         </div>
@@ -34,10 +34,10 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
         <div class="banner-wrap h-100">
           <a href="#" class="h-100">
-            <h5>Season <br> Sale 50% Off</h5>
+            <h5>Seasonal  <br> Harvest Deals</h5>
             <p>
-              Amet sit amet dolor
-              <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+            Taste the season’s best — 
+              <strong>Get up to 50% off on selected farm-fresh produce.</strong>
             </p>
           </a>
         </div>
@@ -45,10 +45,10 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
         <div class="banner-wrap bg-warning h-100">
           <a href="#" class="h-100">
-            <h5>Buy <br> A Gift Card</h5>
+            <h5>Gift <br>  A Healthy Basket</h5>
             <p>
-              Amet sit amet dolor
-              <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+            Show you care with a gift of wellness — 
+              <strong>Send curated fruit & veggie baskets to your loved ones.</strong>
             </p>
           </a>
         </div>

@@ -81,10 +81,12 @@
       <div class="container">
         <div class="row align-items-stretch">
           <div class="col-lg-6 mb-5 mb-lg-0">
+            
             <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('../frontend/images/bg_1.jpg');">
               <div class="banner-1-inner align-self-center">
-                <h2>Pharma Products</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                <h2>Fresh From the Farm</h2>
+                <p> Handpicked fruits and vegetables grown in our own fields in Cianjur.  
+                <strong>Zero middlemen, zero compromise—just clean, healthy food.</strong>
                 </p>
               </div>
             </a>
@@ -93,7 +95,8 @@
             <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('../frontend/images/bg_2.jpg');">
               <div class="banner-1-inner ml-auto  align-self-center">
                 <h2>Rated by Experts</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                <p>Our produce is trusted by nutritionists, chefs, and families alike.  
+                <strong>Freshness, taste, and quality—every time you order.</strong>
                 </p>
               </div>
             </a>
@@ -113,16 +116,7 @@
             </div>
 
           </div>
-          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
-            <h3 class="footer-heading mb-4">Quick Links</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Supplements</a></li>
-              <li><a href="#">Vitamins</a></li>
-              <li><a href="#">Diet &amp; Nutrition</a></li>
-              <li><a href="#">Tea &amp; Coffee</a></li>
-            </ul>
-          </div>
-
+          <div class="col-lg-3 mx-auto mb-5 mb-lg-0"></div>
           <div class="col-md-6 col-lg-3">
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>

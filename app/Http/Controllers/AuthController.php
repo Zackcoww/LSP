@@ -22,6 +22,18 @@ class AuthController extends Controller
         ]);
         $credentials = request(['email', 'password']);
 
+// traditional
+/*
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect('/home'); 
+        }
+
+        return redirect('/login')->with('failed', 'Email or password is incorrect');
+*/
+
+// admin login with jwt
+
         if (auth()->attempt($credentials)){
             $token = Auth::guard('api')->attempt($credentials);
             return response()->json([
@@ -44,7 +56,13 @@ class AuthController extends Controller
             'token_type' => 'bearer',
             'expires_in' => auth()->factory()->getTTL() * 60
         ]);
+
+
+
+
     }
+
+
 
     public function register_customer_action(Request $request){
         $validator = Validator::make($request->all(),[

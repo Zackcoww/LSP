@@ -2,13 +2,15 @@
 @section('title', 'About')
 
 @section('content')
-<div class="site-blocks-cover inner-page" style="background-image: url('../frontend/images/hero_1.jpg');">
+<div class="site-blocks-cover inner-page opacity-5" style="background-image: url('../frontend/images/hero_1.jpg');">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 mx-auto align-self-center">
+      <div class="col-lg-7 mx-auto align-self-center opacity-5">
         <div class=" text-center">
           <h1>About Us</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati natus iure voluptatum eveniet harum recusandae ducimus saepe.</p>ˀ
+          <p>We are a Cianjur-based farm dedicated to bringing you the freshest, most natural fruits and vegetables—grown with care on our very own land.  
+  At Cianjur Farm Fresh, we believe in quality, sustainability, and healthy living.  
+  Whether you're shopping for daily needs or a special occasion, our produce is handpicked, chemical-free, and full of flavor.</p>ˀ
         </div>
       </div>
     </div>
@@ -35,11 +37,7 @@
         <div class="site-section-heading pt-3 mb-4">
           <h2 class="text-black">How We Started</h2>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellat, dicta at laboriosam, nemo
-          exercitationem itaque eveniet architecto cumque, deleniti commodi molestias repellendus quos sequi hic fugiat
-          asperiores illum. Atque, in, fuga excepturi corrupti error corporis aliquam unde nostrum quas.</p>
-        <p>Accusantium dolor ratione maiores est deleniti nihil? Dignissimos est, sunt nulla illum autem in, quibusdam
-          cumque recusandae, laudantium minima repellendus.</p>
+        <p>We are a trusted company that began on a small family farm in Cianjur. What started as a local passion for cultivating fresh fruits and vegetables has grown into an online store committed to delivering farm-to-table goodness. We believe in honesty, freshness, and quality in every box.</p>
 
       </div>
     </div>
@@ -67,11 +65,9 @@
         <div class="site-section-heading pt-3 mb-4">
           <h2 class="text-black">We Are Trusted Company</h2>
         </div>
-        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellat, dicta at laboriosam, nemo
-          exercitationem itaque eveniet architecto cumque, deleniti commodi molestias repellendus quos sequi hic fugiat
-          asperiores illum. Atque, in, fuga excepturi corrupti error corporis aliquam unde nostrum quas.</p>
-        <p class="text-black">Accusantium dolor ratione maiores est deleniti nihil? Dignissimos est, sunt nulla illum autem in, quibusdam
-          cumque recusandae, laudantium minima repellendus.</p>
+        <p class="text-black">From a small local farm in the heart of <strong>Cianjur</strong> to a full-scale online store,
+          we began with a simple idea—deliver the freshest fruits and vegetables straight from the field
+          to your doorstep. No middlemen, no compromises.</p>
 
       </div>
     </div>
@@ -86,9 +82,8 @@
           <span class="icon-truck text-primary"></span>
         </div>
         <div class="text">
-          <h2>Free Shipping</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-            tincidunt fringilla.</p>
+          <h2>Free Delivery</h2>
+          <p>No extra fees, no hidden costs. We deliver your fresh fruits and vegetables straight to your door—for free. Fast, reliable, and right on time.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
@@ -97,8 +92,7 @@
         </div>
         <div class="text">
           <h2>Free Returns</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-            tincidunt fringilla.</p>
+          <p>If something’s not right, we’ll make it right. With our free returns policy, your satisfaction is always guaranteed.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
@@ -107,82 +101,7 @@
         </div>
         <div class="text">
           <h2>Customer Support</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan
-            tincidunt fringilla.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="site-section bg-light custom-border-bottom" data-aos="fade">
-  <div class="container">
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-7 site-section-heading text-center pt-4">
-        <h2>The Team</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-6 mb-5">
-
-        <div class="block-38 text-center">
-          <div class="block-38-img">
-            <div class="block-38-header">
-              <img src="../frontend/images/person_1.jpg" alt="Image placeholder" class="mb-4">
-              <h3 class="block-38-heading h4">Elizabeth Graham</h3>
-              <p class="block-38-subheading">CEO/Co-Founder</p>
-            </div>
-            <div class="block-38-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio
-                recusandae doloribus ut fugit officia voluptate soluta. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5">
-        <div class="block-38 text-center">
-          <div class="block-38-img">
-            <div class="block-38-header">
-              <img src="../frontend/images/person_2.jpg" alt="Image placeholder" class="mb-4">
-              <h3 class="block-38-heading h4">Jennifer Greive</h3>
-              <p class="block-38-subheading">Co-Founder</p>
-            </div>
-            <div class="block-38-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio
-                recusandae doloribus ut fugit officia voluptate soluta. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5">
-        <div class="block-38 text-center">
-          <div class="block-38-img">
-            <div class="block-38-header">
-              <img src="../frontend/images/person_3.jpg" alt="Image placeholder" class="mb-4">
-              <h3 class="block-38-heading h4">Patrick Marx</h3>
-              <p class="block-38-subheading">Marketing</p>
-            </div>
-            <div class="block-38-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio
-                recusandae doloribus ut fugit officia voluptate soluta. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-6 mb-5">
-        <div class="block-38 text-center">
-          <div class="block-38-img">
-            <div class="block-38-header">
-              <img src="../frontend/images/person_4.jpg" alt="Image placeholder" class="mb-4">
-              <h3 class="block-38-heading h4">Mike Coolbert</h3>
-              <p class="block-38-subheading">Sales Manager</p>
-            </div>
-            <div class="block-38-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio
-                recusandae doloribus ut fugit officia voluptate soluta. </p>
-            </div>
-          </div>
+          <p>We’re here for you. Whether you have questions, feedback, or need help with your order, our support team is ready and happy to assist.</p>
         </div>
       </div>
     </div>

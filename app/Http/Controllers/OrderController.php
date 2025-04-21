@@ -15,7 +15,7 @@ class OrderController extends Controller
 {
     public function __construct(){
         $this->middleware('auth')->only(['list', 'confirmed_list', 'packed_list', 'sent_list', 'received_list', 'finished_list']);
-        $this->middleware('auth:api')->only(['store', 'update', 'destroy', 'ubah_status', 'baru', 'confirmed', 'packed', 'sent', 'received', 'finished' ]);
+        #$this->middleware('auth:api')->only(['store', 'update', 'destroy', 'ubah_status', 'baru', 'confirmed', 'packed', 'sent', 'received', 'finished' ]);
     }
 
     /**

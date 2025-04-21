@@ -1,120 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../admin/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../admin/assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Admin Login</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/admin/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/admin/assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+    <link href="/admin/assets/demo/demo.css" rel="stylesheet" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
+  </head>
+  <body>       
+      <div class="w-50 rounded px-3 py-3 mx-auto">
+        <div class="card card-user">
+          <div class="card-header">
+            <h5 class="card-title">Admin Login</h5>
+          </div>
+          <div class="card-body">
+            <form action="/login" method="POST">
+              @csrf
+              @if (Session::has('error'))
+                <p style="color: red">{{ Session::get('error') }}</p>
+              @endif
+              @if ($errors->any())
+                <ul>
+                  @foreach ($errors->all() as $error)
+                    <li style="color: red">{{ $error }}</li>
+                  @endforeach
+                </ul>
+              @endif
 
-<body class="bg-gradient-primary">
-
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="/login">Custom Login Register</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-    </nav>    
-
-    <div class="container">
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-8">
-        
-                <div class="card">
-                    <div class="card-header">Login</div>
-                    <div class="card-body">
-                        @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <strong>Failed</strong>
-                            <p>{{ $errors->first() }}</p>
-                        </div>
-                        @endif
-                        <form method="POST" action="/login" class="form-login user">
-                            @csrf
-                            <div class="mb-3 row">
-                                <label for="email" class="col-md-4 col-form-label text-md-end text-start">Email Address</label>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control form-control-user email"
-                                            id="exampleInputEmail" aria-describedby="emailHelp"
-                                            placeholder="Email" name="email">
-                                    @error('email')
-                                    <small class="text-danger">
-                                        {{ $message }}
-                                    </small>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <label for="password" class="col-md-4 col-form-label text-md-end text-start">Password</label>
-                                <div class="col-md-6">
-                                    <input type="password" class="form-control form-control-user password"
-                                        id="exampleInputPassword" placeholder="Password" name="password">
-                                    @error('password')
-                                    <small class="text-danger">
-                                        {{ $message }}
-                                    </small>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <button type="submit" class="col-md-3 offset-md-5 btn btn-primary">Login</button>
-                            </div>
-                            
-                        </form>
-                    </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Email" name='email' value="{{ old('email') }}">
+                  </div>
                 </div>
-            </div>    
-        </div>
-    </div>
+              </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
-    <script src="admin/assets/js/jquery.min.js"></script>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password" name="password">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="update ml-auto mr-auto">
+                  <input type="submit" value="Login" class="btn btn-primary btn-round" />
+                  <a href="/"><span class="btn btn-round btn-danger ms-3">Cancel</span></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script src="/admin/assets/js/core/jquery.min.js"></script>
+    <script src="/admin/assets/js/core/popper.min.js"></script>
+    <script src="/admin/assets/js/core/bootstrap.min.js"></script>
+    <script src="/admin/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script src="/admin/assets/js/plugins/chartjs.min.js"></script>
+    <script src="/admin/assets/js/plugins/bootstrap-notify.js"></script>
+    <script src="/admin/assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+    <script src="/admin/assets/demo/demo.js"></script>
+
     <script>
-        $(function(){
-            function setCookie(name,value,days) {
-                var expires = "";
-                if (days){
-                    var date = new Date();
-                    date.setTime(date.getTime()+(days*24*60*60*1000));
-                    expires = "; expires=" + date.toUTCString();
-                }
-                document.cookie = name+"="+value+expires+"; path=/";
+  // Intercept form submission
+    $('form').submit(function (e) {
+        e.preventDefault();
+
+        const email = $('input[name="email"]').val();
+        const password = $('input[name="password"]').val();
+        const csrf_token = $('meta[name="csrf-token"]').attr('content');
+
+        $.ajax({
+        url: '/login',
+        type: 'POST',
+        data: {
+            email: email,
+            password: password,
+            _token: csrf_token
+        },
+        success: function (data) {
+            if (!data.success) {
+            alert(data.message);
+            return;
             }
 
-            $('.form-login').submit(function(e){
-                e.preventDefault();
-                const email = $('.email').val();
-                const password = $('.password').val();
-                const csrf_token = $('meta[name="csrf-token"]').attr('content');
+            // Store the token in a cookie or localStorage
+            localStorage.setItem('jwt_token', data.token);
 
-                $.ajax({
-                    url : '/login',
-                    type : 'POST',
-                    data : {
-                        email : email,
-                        password : password,
-                        _token : csrf_token
-                    },
-                    success : function(data){
-                        if(!data.success){
-                            alert(data.message);
-                        }
-                        setCookie('token', data.token, 7);
-                        window.location.href = '/home';
-                    }
-                })
-            })
-        })
-    </script>
+            // Redirect to home or dashboard
+            window.location.href = '/home';
+        },
+        error: function (xhr, status, error) {
+            console.error(error);
+            alert('Login failed. Please try again.');
+        }
+        });
+    });
+</script>
 
-</body>
 
+  </body>
 </html>

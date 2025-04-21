@@ -34,7 +34,7 @@ sudo systemctl restart docker
 
 # 2. Clone Laravel project
 cd ~
-git clone https://github.com/akechi17/toko-buah.git
+git clone https://github.com/Zackcoww/LSP.git
 
 # 3. Create Dockerfile
 cat <<'EOF' > Dockerfile
@@ -82,7 +82,7 @@ services:
     networks:
       - laravel
 
-  db:
+  db: 
     image: mysql:8.0
     container_name: mysql_db
     restart: unless-stopped

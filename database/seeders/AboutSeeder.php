@@ -17,7 +17,7 @@ class AboutSeeder extends Seeder
             'judul_website' => 'Zako',
             'logo' => 'logo.png',
             'deskripsi' => 'ashiap zaky bin fery',
-            'alamat' => 'Jl. Karadenan No. 7',
+            'alamat' => 'Jl. Raya Cipanas No. 45, Desa Sindanglaya, Kecamatan Cipanas, Kabupaten Cianjur, Jawa Barat 43253',
             'email' => 'zaky@gmail.com',
             'telepon' => '081234567890',
             'atas_nama' => 'Achmad Zaky',
